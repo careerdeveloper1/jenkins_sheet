@@ -6,8 +6,9 @@ Run the command:
 **Follow the prompts. By default, the keys will be saved in the following location:**
 ```C:\Users\<YourUsername>\.ssh\```
 **The SSH key pair generated will include:**
-```Private Key: id_ed.* (for use on Jenkins)
-Public Key: id_ed.*.pub (for use on the Linux VM)```
+
+Private Key: id_ed.* (for use on Jenkins)
+Public Key: id_ed.*.pub (for use on the Linux VM)
 
 **2. Add a New Node in Jenkins (Windows to Linux VM):**
 
