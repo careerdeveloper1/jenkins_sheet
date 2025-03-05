@@ -10,10 +10,11 @@
 2. Run the following command to generate the SSH key pair:
    ```bash
    ssh-keygen
+   
 The keys will be saved in your local drive at:
-bash
-
+```bash
 C:\Users\<YourUsername>\.ssh\
+
 The generated key files will be:
 Private Key: id_ed.* (used on Jenkins)
 Public Key: id_ed.*.pub (used on the Linux VM)
@@ -68,3 +69,6 @@ Ensure the Linux VM is configured to allow SSH connections and that no firewall 
 If needed, restart Jenkins to make sure the agent is connected properly.
 Check the Node Connectivity on Jenkins:
 Visit the Jenkins dashboard to see if the node (agent-vishal) is online and connected.
+
+
+```
