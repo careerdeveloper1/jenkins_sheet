@@ -1,13 +1,18 @@
-Steps to Add a New Node as an Agent in Jenkins
-1. Generate SSH Key on Windows Machine
-Open Command Prompt (CMD) on your Windows machine.
-Run the following command to generate the SSH key pair:
-bash
-Copy
-ssh-keygen
+**# Jenkins Agent Setup (Windows to Linux VM)**
+
+---
+
+## Steps to Add a New Node as an Agent in Jenkins
+
+### 1. Generate SSH Key on Windows Machine
+
+1. Open **Command Prompt (CMD)** on your Windows machine.
+2. Run the following command to generate the SSH key pair:
+   ```bash
+   ssh-keygen
 The keys will be saved in your local drive at:
 bash
-Copy
+
 C:\Users\<YourUsername>\.ssh\
 The generated key files will be:
 Private Key: id_ed.* (used on Jenkins)
@@ -45,17 +50,17 @@ Click Save to save the Jenkins node configuration.
 3. Configure the Linux VM (Agent)
 SSH into the Linux VM:
 bash
-Copy
+
 ssh welcomeuser@<VM-IP>
 Navigate to the .ssh directory:
 bash
-Copy
+
 cd ~/.ssh/
 Edit the authorized_keys file:
 bash
-Copy
+
 nano authorized_keys
-Copy the contents of the public key (id_ed.*.pub) from the Windows machine and paste it into the authorized_keys file on the Linux VM.
+ the contents of the public key (id_ed.*.pub) from the Windows machine and paste it into the authorized_keys file on the Linux VM.
 Save and exit by pressing:
 CTRL + X, then Y, then Enter.
 4. Final Steps
